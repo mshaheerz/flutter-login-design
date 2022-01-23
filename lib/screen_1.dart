@@ -28,7 +28,7 @@ class ScreenOne extends StatelessWidget {
               padding: const EdgeInsets.only(top: 80, left: 20, right: 20),
               // Text field of UserName
               child: TextField(
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.black),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
