@@ -12,11 +12,11 @@ class ScreenTwo extends StatelessWidget {
         child: Column(children: [
           Center(
             child: ElevatedButton(
-               style: ElevatedButton.styleFrom(
-              primary: Colors.white,
-              shadowColor: Colors.red,
-              onPrimary: Colors.black,
-              ),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  shadowColor: Colors.red,
+                  onPrimary: Colors.black,
+                ),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -25,33 +25,31 @@ class ScreenTwo extends StatelessWidget {
           ),
           ElevatedButton(
 
-            //just a button style
-            style: ElevatedButton.styleFrom(
-            primary: Colors.white,
-            shadowColor: Colors.red,
-            onPrimary: Colors.black,
-            ),
+              //just a button style
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+                shadowColor: Colors.red,
+                onPrimary: Colors.black,
+              ),
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
                   return const ScreenThree();
-                }
-                
-                )
-                );
+                }));
               },
-              child: const Text('ExampleButton to screen 3',)),
-
-              const Padding(
-                padding: EdgeInsets.only(top: 150),
-                child: Text('This is a Screen Two',style: 
-                TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-                ),
+              child: const Text(
+                'ExampleButton to screen 3',
+              )),
+          const Padding(
+            padding: EdgeInsets.only(top: 150),
+            child: Text(
+              'This is a Screen Two',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
               ),
-              
+            ),
+          ),
         ]),
       ),
     );
