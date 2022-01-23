@@ -11,8 +11,8 @@ class ScreenThree extends StatelessWidget {
       backgroundColor: Colors.green,
       body: SafeArea(child: Column(children: [
         
-        Text('hhaha',
-        style: TextStyle(color: Colors.red[400]),
+        Text('This is screen 3 ',
+        style: TextStyle(color: Colors.black),
         ),
        ElevatedButton(
               onPressed: () {

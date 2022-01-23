@@ -14,14 +14,14 @@ class ScreenTwo extends StatelessWidget {
                 Navigator.of(context).pop();
               },
               // ignore: prefer_const_constructors
-              child: Text('hehe')),
+              child: Text('example button to back')),
           ElevatedButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
                   return ScreenThree();
                 }));
               },
-              child: Text('fear'))
+              child: Text('ExampleButton to screen 3'))
         ]),
       ),
     );

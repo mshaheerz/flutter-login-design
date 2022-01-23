@@ -39,7 +39,7 @@ class ScreenOne extends StatelessWidget {
                     fillColor: Colors.white,
                     filled: true,
                   
-                  hintText: 'Enter your name',
+                  hintText: 'Uasername',
                 
                   hintStyle: TextStyle(color: Colors.black),
                   
@@ -72,7 +72,7 @@ class ScreenOne extends StatelessWidget {
                     fillColor: Colors.white,
                     filled: true,
                   
-                  hintText: 'Enter your Password',
+                  hintText: 'Password',
                 
                   hintStyle: TextStyle(color: Colors.black),
                   
@@ -98,7 +98,7 @@ class ScreenOne extends StatelessWidget {
               
                 color: Colors.white,
                 shape: ShapeBorder.lerp(Border.all(color: Colors.black), Border.all(color: Colors.white), 0.5),
-                child: Text('Next',style: TextStyle(color: Colors.black),),
+                child: Text('Sign In',style: TextStyle(color: Colors.black),),
               ),
             ),
 
