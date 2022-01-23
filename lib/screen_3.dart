@@ -11,12 +11,15 @@ class ScreenThree extends StatelessWidget {
       backgroundColor: Colors.green,
       body: SafeArea(child: Column(children: [
         
-        Text('This is screen 3 ',
-        style: TextStyle(color: Colors.black),
+        Center(
+          child: Text('This is screen 3 ',
+          style: TextStyle(color: Colors.black),
+          ),
         ),
        ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pop();
+              
               },
               child: Text('go back'))
       ],)
