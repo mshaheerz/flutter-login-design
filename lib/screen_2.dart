@@ -42,8 +42,8 @@ class ScreenTwo extends StatelessWidget {
               child: const Text('ExampleButton to screen 3',)),
 
               const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text('This is a Screen two',style: 
+                padding: EdgeInsets.only(top: 150),
+                child: Text('This is a Screen Two',style: 
                 TextStyle(
                   color: Colors.white,
                   fontSize: 30,
