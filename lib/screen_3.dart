@@ -11,7 +11,7 @@ class ScreenThree extends StatelessWidget {
       backgroundColor: Colors.green,
       body: SafeArea(child: Column(children: [
         
-        Center(
+        const Center(
           child: Text('This is screen 3 ',
           style: TextStyle(color: Colors.black),
           ),
@@ -21,7 +21,7 @@ class ScreenThree extends StatelessWidget {
                 Navigator.of(context).pop();
               
               },
-              child: Text('go back'))
+              child: const Text('go back'))
       ],)
       ,
       ),

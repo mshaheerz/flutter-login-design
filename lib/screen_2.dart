@@ -33,16 +33,16 @@ class ScreenTwo extends StatelessWidget {
             ),
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
-                  return ScreenThree();
+                  return const ScreenThree();
                 }
                 
                 )
                 );
               },
-              child: Text('ExampleButton to screen 3',)),
+              child: const Text('ExampleButton to screen 3',)),
 
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Text('This is a Screen two',style: 
                 TextStyle(
                   color: Colors.white,

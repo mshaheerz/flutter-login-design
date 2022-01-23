@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:roads_cross/screen_2.dart';
 
@@ -9,12 +11,12 @@ class ScreenOne extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        iconTheme: IconThemeData.fallback(),
+        iconTheme: const IconThemeData.fallback(),
         backgroundColor: Colors.black,
         
         
-        titleTextStyle: TextStyle(letterSpacing:4),centerTitle: true,
-        title: Text('LOGIN PAGE',
+        titleTextStyle: const TextStyle(letterSpacing:4),centerTitle: true,
+        title: const Text('LOGIN PAGE',
         style: TextStyle(color: Colors.black,backgroundColor: Colors.white),),
       
       ),
@@ -27,7 +29,7 @@ class ScreenOne extends StatelessWidget {
               padding: const EdgeInsets.only(top: 80,left: 20,right: 20),
             
               child: TextField(
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
            
              
               
@@ -41,12 +43,12 @@ class ScreenOne extends StatelessWidget {
                   
                   hintText: 'Uasername',
                 
-                  hintStyle: TextStyle(color: Colors.black),
+                  hintStyle: const TextStyle(color: Colors.black),
                   
                   border: OutlineInputBorder(
                     
                     borderRadius: BorderRadius.circular(4),
-                    borderSide: BorderSide(color: Colors.white),
+                    borderSide: const BorderSide(color: Colors.white),
                   ),
                 ),
               ),
@@ -60,7 +62,7 @@ class ScreenOne extends StatelessWidget {
               padding: const EdgeInsets.only(top: 40,left: 20,right: 20),
             
               child: TextField(
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
            
              
               
@@ -74,12 +76,12 @@ class ScreenOne extends StatelessWidget {
                   
                   hintText: 'Password',
                 
-                  hintStyle: TextStyle(color: Colors.black),
+                  hintStyle: const TextStyle(color: Colors.black),
                   
                   border: OutlineInputBorder(
                     
                     borderRadius: BorderRadius.circular(4),
-                    borderSide: BorderSide(color: Colors.black),
+                    borderSide: const BorderSide(color: Colors.black),
                   ),
                 ),
               ),
@@ -93,12 +95,12 @@ class ScreenOne extends StatelessWidget {
             
               child: RaisedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ScreenTwo()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const ScreenTwo()));
                 },
               
                 color: Colors.white,
                 shape: ShapeBorder.lerp(Border.all(color: Colors.black), Border.all(color: Colors.white), 0.5),
-                child: Text('Sign In',style: TextStyle(color: Colors.black),),
+                child: const Text('Sign In',style: TextStyle(color: Colors.black),),
               ),
             ),
 
@@ -115,13 +117,13 @@ class ScreenOne extends StatelessWidget {
             
               child: RaisedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ScreenTwo()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const ScreenTwo()));
                 },
               
                 color: Colors.black,
           
                 shape: ShapeBorder.lerp(Border.all(color: Colors.transparent), Border.all(color: Colors.transparent), 0.5),
-                child: Text('sign up',style: TextStyle(color: Colors.white),),
+                child: const Text('sign up',style: TextStyle(color: Colors.white),),
               ),
             ),
 
